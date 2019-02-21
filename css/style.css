@@ -1,0 +1,41 @@
+body {
+	background-color: #d6d6d6;
+}
+.container {
+	border-top: 3px solid #333333;
+	border-left: 3px solid #333333;
+	border-bottom: 3px solid #ffffff;
+	border-right: 3px solid #ffffff;
+	background: #efefef;
+	width: 300px;
+	height: 600px;
+	display: table;
+}
+
+.quadro {
+	width: 20px;
+	height: 20px;
+	display: table;
+	float: left;
+	background: transparent;
+	margin: 0;
+	padding: 0;
+	font-size: 11px;
+	text-align: center;
+}
+
+.quadro:hover {
+	background: #fc0;
+}
+
+#mouse {
+	position: absolute;
+	left: 800px;
+	top: 100px;
+}
+
+#pontos {
+	position: absolute;
+	left: 800px;
+	top: 200px;
+}
