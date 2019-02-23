@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<h1>Shapes and Collumns - JS Cover</h1>
+<h1>Shapes and Columns - JS Cover</h1>
 <p>Use as setas para mover.</p>	
 <p>Use espaço para trocar a posição.</p>	
 
@@ -115,9 +115,9 @@ function criaPlayer(){
 
 function movimentaPlayer(){
 	if(haveMovement){
-	y1=y1+1;
-	y2=y2+1;
-	y3=y3+1;
+		y1=y1+1;
+		y2=y2+1;
+		y3=y3+1;
 	}
 }
 
@@ -156,6 +156,7 @@ function desenha(){
 }
 
 function desenhaPlayer(){
+
 	$("#q_"+y1+"_"+x1).css({
 		"background-color": cor[cor1],
 		"background-image": "url(images/bloco.png)"
