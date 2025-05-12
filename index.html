@@ -88,11 +88,23 @@ var cor1, cor2, cor3 = 0;
 var cor = ["transparent","#f00","#0f0","#00f","#ff0","#f0f","#0ff"];
 
 
-var desenha = setInterval(desenha,100);
-var movimenta = setInterval(movimenta,100);
-var desenhaPlayer = setInterval(desenhaPlayer,100);
+//var desenha = setInterval(desenha,100);
+//var movimenta = setInterval(movimenta,100);
+//var desenhaPlayer = setInterval(desenhaPlayer,100);
 var movimentaPlayer = setInterval(movimentaPlayer,500); /* velocidade com que cai. */
-var destroy = setInterval(destruir,100);
+//var destroy = setInterval(destruir,100);
+
+var rst = null;
+
+function loop(){
+	rAF = requestAnimationFrame(loop);
+	desenha();
+	movimenta();
+	desenhaPlayer();
+	destruir();
+}
+
+rst = requestAnimationFrame(loop);
 
 /* ------ cria blocos aleatórios ------ */
 for(var l=29; l>15; l--){
